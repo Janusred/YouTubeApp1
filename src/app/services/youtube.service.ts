@@ -10,9 +10,9 @@ import { ApiKey } from './config/config';
 export class YoutubeService {
 
   private youtubeUrl    = 'https://www.googleapis.com/youtube/v3/playlistItems';
-  private apikey        = '';
-  private playlist      = 'UUo3AxjxePfj6DHn03aiIhww';
-  private nextPageToken = '';
+  private apikey        = 'AIzaSyB1Z3Dngg5PPyUijhXYzpf0qqbBej7HpA0';
+  private playlist      = 'UUycYAExXIdxLL6uJUJVRwUw';
+  private nextPageToken = 'CAUQAA';
 
   constructor(private http: HttpClient) {
     console.log('Ingresa a servicio');

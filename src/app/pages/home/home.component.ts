@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Video } from 'src/app/models/youtube.models';
 import { YoutubeService } from 'src/app/services/youtube.service';
+
+// ES6 Modules or TypeScript
 import Swal from 'sweetalert2';
 
 @Component({
@@ -23,17 +25,12 @@ export class HomeComponent {
       html:`
       <h4>${ video.title }</h4>
       <hr>
-      <iframe width="100%" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/${ video.resourceId.videoId }" 
-                    frameborder="0" 
-                    allow="accelerometer; 
-                    autoplay; 
-                    clipboard-write; 
-                    encrypted-media; 
-                    gyroscope; 
-                    picture-in-picture" 
-                    allowfullscreen></iframe>`
+      <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/BD_guK9b64k" 
+      frameborder="0" allow="accelerometer; autoplay; 
+      clipboard-write; encrypted-media; gyroscope; 
+      picture-in-picture" allowfullscreen>
+      </iframe>
     })
   }
   

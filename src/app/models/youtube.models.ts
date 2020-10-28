@@ -34,7 +34,7 @@ export enum ChannelID {
 }
 
 export enum ChannelTitle {
-    FernandoHerrera = "Fernando Herrera",
+    FernandoHerrera = "Janus Lds ",
 }
 
 export enum PlaylistID {
