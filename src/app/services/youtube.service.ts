@@ -2,11 +2,15 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { YoutubeResponse } from '../models/youtube.models';
 import { map } from 'rxjs/operators';
-import { ApiKey } from './config/config';
+import { ApiKey } from '../config/config';
+
+
 
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class YoutubeService {
 
   private youtubeUrl    = 'https://www.googleapis.com/youtube/v3/playlistItems';
@@ -15,11 +19,11 @@ export class YoutubeService {
   private nextPageToken = 'CAUQAA';
 
   constructor(private http: HttpClient) {
-    console.log('Ingresa a servicio');
+    console.log('Listo');
     const apiClass = new ApiKey();
     this.apikey = apiClass.apikey;
   }
-  
+
   getVideos(){
     const url = `${ this.youtubeUrl }`;
     const params = new HttpParams()
